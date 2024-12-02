@@ -1,345 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Tipsy Troll Tavern</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f0e6d2;
-        color: #333;
-        margin: 0;
-        padding: 20px;
-        box-shadow: #333;
-        line-height: 1.6;
-      }
 
-      header {
-        background-color: #ffffff;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        border-bottom: 5px solid #ffd700;
-        border-image-slice: fill;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Min hjemmeside</title>
 
-      nav {
-        margin-top: 20px;
-      }
+  <link rel="stylesheet" href="style.css">
 
-      nav a {
-        font-family: Arial, sans-serif;
-        color: #47432a;
-        text-decoration: tomato;
-        margin: 0 10px;
-        padding: 5px 10px;
-        border: 1px solid #000000;
-        box-shadow: #333;
-      }
+</head>
 
-      main {
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        margin-top: 20px;
-      }
-
-      section {
-        margin-bottom: 30px;
-        padding: 15px;
-        border: 1px solid #8b4513;
-      }
-
-      button {
-        background-color: #4caf50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        margin-top: 10px;
-      }
-
-      input[type="text"] {
-        padding: 10px;
-        width: calc(100% - 22px); /* Full width minus padding and border */
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-      }
-
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        font-size: large;
-        color: rgb(46, 25, 25);
-        grid-template-rows: auto;
-        fill: #47432a;
-      }
-
-      nav {
-        display: flex;
-        gap: 10px;
-      }
-
-      main {
-        flex: 1;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 20px;
-      }
-
-      section {
-        flex: 1 1 300px;
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        border: 1px solid #8b4513;
-      }
-
-      .menu-items {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        box-shadow: #333;
-        display: flex;
-        justify-content: center;
-      }
-      .menu-item {
-        flex: 1 1 200px;
-        padding: 10px;
-        border: 1px solid #ffd700;
-      }
-
-      footer {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-      }
-
-      .photo-gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 18px 28px 19px -2px rgba(0,0,0,0.59);
-      }
-
-      .photo-item {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 10px;
-        box-shadow: #8b4513;
-      }
-
-      .featured-photo {
-        grid-column: 1 / -1;
-        height: 300px;
-      }
-
-      ul.a {
-        list-style-type: circle;
-      }
-
-      ul.b {
-        list-style-type: square;
-      }
-
-      ol.c {
-        list-style-type: upper-roman;
-      }
-
-      ol.d {
-        list-style-type: lower-alpha;
-      }
-
-      .hero {
-        display: flex;
-        justify-content: center
-      }
-
-      /* Style the hero image */
-      hero-image {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url("photographer.jpg");
-        height: 100vh; /* Full viewport height */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-      }
-
-      /* Style the text inside the hero image */
-      .hero-text {
-        text-align: center;
-        color: white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .header2 {
-        align-items: flex-end;
-        object-fit: scale-down;
-      }
-
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Min hjemmeside</h1>
+<body>
+  <header>
+    <img src="./OIP.jpg" alt="Logo" class="logo">
+    <h1>Min hjemmeside</h1>
+    <nav>
       <nav>
-        <nav>
-          <a href="menu.html">Menu</a>
-          <a href="events.html">Events</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <a href="meny.html">Meny</a>
+        <a href="events.html">Arrangementer</a>
+        <a href="#contact.html">Kontakt</a>
       </nav>
-    </header>
+    </nav>
+  </header>
 
-    <div class="header2">
-      <img
-        src="./OIP.jpg"
-        alt="OIP"
-      />
-      <h2>Velkommen til min hjemmeside</h2>
-    </div>
+  <main>
+    <h2>Hello!</h2>
+    <p>
+      Hei, jeg heter [Ditt navn], og jeg brenner for [dine interesser eller yrke]. Jeg er født og oppvokst i
+      [C], og jeg bor for tiden i [Location]. I løpet av årene har jeg utviklet en dyp kjærlighet til
+      [hobbyer eller ferdigheter], noe som førte til at jeg fulgte [utdanningsbakgrunn eller karrierevei]. Jeg har en
+      grad i [Your Degree] fra [Your University], og jeg jobber som [Your Job Title] hos [Company/Organization]. I denne
+      rollen spesialiserer jeg meg på [nøkkelansvar], og jeg leter alltid etter måter å forbedre ferdighetene mine og
+      bidra til meningsfulle prosjekter på.
+    </p>
 
-    <main>
-      <h2>Hello!</h2>
+    <section id="suggestions">
+      <h2>Reklame</h2>
+      <form>
+        <input type="text" name="suggestion" placeholder="Skriv her..." />
+        <button type="submit">Send Suggestion</button>
+      </form>
+    </section>
+
+    <section id="suggestions">
+      <h2>Reklame</h2>
+      <form>
+        <input type="text" name="suggestion" placeholder="Skriv her..." />
+        <button type="submit">Send Suggestion</button>
+      </form>
+    </section>
+
+    <p>
+      Enjoy our famous brews and hearty meals!
+      <a href="https://fantasy-tavern-reviews.com/tipsy-troll">Read our rave reviews!</a>
+    </p>
+
+    <section id="contact">
+      <h2>E-post</h2>
       <p>
-        Hi, I'm [Your Name], and I am passionate about [Your Interests or Profession]. 
-        I was born and raised in [City/Country], and I currently live in [Location]. 
-        Over the years, I have developed a deep love for [Hobbies or Skills], 
-        which led me to pursue [Educational Background or Career Path].
-        I hold a degree in [Your Degree] from [Your University], and I work as a [Your Job Title] 
-        at [Company/Organization]. In this role, I specialize in [Key Responsibilities], 
-        and I'm always looking for ways to improve my skills and contribute to meaningful 
-        projects..
+        Send meg en melding på
+        <a href="mailto:vegar24sfj@gmail.com">vegar24sfj@gmail.com</a>
       </p>
+    </section>
 
-      <section id="suggestions">
-        <h2>Suggest an Improvement</h2>
-        <form>
-          <input
-            type="text"
-            name="suggestion"
-            placeholder="Your brilliant idea here..."
-          />
-          <button type="submit">Send Suggestion</button>
-        </form>
-      </section>
+    <section class="photo-gallery">
+      <img src="./th (1).jpg" alt="Happy Hour Chaos" class="photo-item" />
+      <img src="./th (2).jpg" alt="Weekly Wizard Duel" class="photo-item" />
+      <img src="./th (3).jpg" alt="Annual Dragon BBQ" class="photo-item" />
+      <img src="./th (4).jpg" alt="Potion Mixing Contest" class="photo-item" />
+      <img src="./th (5).jpg" alt="Ghostly Toast" class="photo-item" />
+    </section>
 
-      <section id="suggestions">
-        <h2>Suggest an Improvement</h2>
-        <form>
-          <input
-            type="text"
-            name="suggestion"
-            placeholder="Your brilliant idea here..."
-          />
-          <button type="submit">Send Suggestion</button>
-        </form>
-      </section>
+    <section id="suggestions">
+      <h2>Reklame</h2>
+      <form>
+        <input type="text" name="suggestion" placeholder="Skriv her..." />
+        <button type="submit">Send Suggestion</button>
+      </form>
 
-      <p>
-        Enjoy our famous brews and hearty meals!
-        <a href="https://fantasy-tavern-reviews.com/tipsy-troll"
-          >Read our rave reviews!</a
-        >
-      </p>
+      <h2>Reklame</h2>
+      <form>
+        <input type="text" name="suggestion" placeholder="Skriv her..." />
+        <button type="submit">Send Suggestion</button>
+      </form>
+    </section>
 
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <p>
-          Send a magic message to
-          <a href="mailto:innkeeper@tipsytroll.com">innkeeper@tipsytroll.com</a>
-        </p>
-      </section>
+  </main>
 
-      <section class="photo-gallery">
-        <img src="./th (1).jpg" alt="Happy Hour Chaos" class="photo-item" />
-        <img src="./th (2).jpg" alt="Weekly Wizard Duel" class="photo-item" />
-        <img src="./th (3).jpg" alt="Annual Dragon BBQ" class="photo-item" />
-        <img
-          src="./th (4).jpg"
-          alt="Potion Mixing Contest"
-          class="photo-item"
-        />
-        <img src="./th (5).jpg" alt="Ghostly Toast" class="photo-item" />
-      </section>
+  <footer>
+    <p>&copy; 2024. All rights reserved.</p>
+  </footer>
+</body>
 
-      <section id="suggestions">
-        <h2>Suggest an Improvement</h2>
-        <form>
-          <input
-            type="text"
-            name="suggestion"
-            placeholder="Your brilliant idea here..."
-          />
-          <button type="submit">Send Suggestion</button>
-        </form>
-      </section>
-
-      <h2>The list-style-type Property</h2>
-
-      <p>Example of unordered lists:</p>
-      <ul class="a">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
-      </ul>
-
-      <ul class="b">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
-      </ul>
-
-      <p>Example of ordered lists:</p>
-      <ol class="c">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
-      </ol>
-
-      <ol class="d">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
-      </ol>
-
-      <section class="hero">
-        <div class="hero-image">
-          <div class="hero-text">
-            <h1>I am John Doe</h1>
-            <p>And I'm a Photographer</p>
-            <button>Hire me</button>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer>
-      <p>&copy; 2024. All rights reserved.</p>
-    </footer>
-  </body>
 </html>
